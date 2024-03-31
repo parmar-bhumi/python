@@ -1,4 +1,4 @@
-'''def sum(a,b):
+def sum(a,b):
 	summation=a+b
 	print('The sum of two digits is:',summation)
 sum(2,5)
@@ -80,9 +80,8 @@ def addition(farg,*args):
 		sum=sum+i
 	print('sum of all numbers is:',(farg+sum))
 addition(2,5)
-addition(2,5,9)'''
+addition(2,5,9)
 
-# error:======
 def dis(lst):
 	for i in lst:
 		print(i)
@@ -97,17 +96,17 @@ a=int(input('Enter the value:'))
 print('The squre of entered number is:',sqr(a))
 
 big=lambda a,b:a if a>b else b
-# a=int(input('Enter the value of a:'))
-# b=int(input('Enter the value of b:'))
-# print('The bigger number is:',big(a,b))
+a=int(input('Enter the value of a:'))
+b=int(input('Enter the value of b:'))
+print('The bigger number is:',big(a,b))
 
-# def generator(a,b):
-# 	while a<=b:
-# 		yield a
-# 		a=a+1
-# gen=generator(1,10)
-# for i in gen:
-# 	print(i,end='')
+def generator(a,b):
+	while a<=b:
+		yield a
+		a=a+1
+gen=generator(1,10)
+for i in gen:
+	print(i,end='')
 
 f=open('file1','w')
 str1=input('Enter the data you want to write into the file:')
