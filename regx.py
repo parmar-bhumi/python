@@ -55,14 +55,66 @@
 # result=re.findall(r'm\w\w',str1)
 # print(result)
 
-import re
-str1='Hello!All;good;morning'
-result=re.split(r'\w+',str1)
-print(result)
+# import re
+# str1='Hello!All;good;morning'
+# result=re.split(r'\w+',str1)
+# print(result)
 
 # import re
 # str1='AITS is the best organisation'
 # print(str1)
 # result=re.sub(r'AITS','Atmiya university',str1)
 # print(result)	
+
+# import re
+# str1='sun shines sooner or later'
+# result=re.findall(r's[\w]*',str1)
+# print(result)
+
+# import re
+# str1='The special classes are arranged on 11th and 21st of every day'
+# result=re.findall(r'\d[\w]*',str1)
+# print(result)
+
+# import re
+# str1='sun mon tue wed thurs fri saturday'
+# result=re.findall(r'\b\w{5}\b',str1)
+# print(result)
+
+# import re
+# str1='sun mon tue wed thurs fri saturday'
+# result=re.findall(r'\b\w{3,4}\b',str1)
+# print(result)
+
+# import re
+# str1='sun mon tue wed thurs fri saturday'
+# result=re.findall(r'\b\w{3,5}\b',str1)
+# print(result)
+
+# import re
+# str1='one three five seven 8 923 10 3000'
+# result=re.findall(r'\b\d\{2,}\b',str1)
+# print(result)
+
+# import re
+# str1='star moon starts planets galaxy star'
+# result=re.findall(r's[\w]*\Z',str1)
+# print(result)
+
+# import re
+# str1='star moon starts planets galaxy'
+# result=re.findall(r'\As[\w]*',str1)
+# print(result)
+
+#quantifiers:====
+# import re
+# str1='abc:1234 cdc:1235'
+# result=re.search(r'\d+',str1)
+# print(result.group)
+
+# error:====-
+import re
+str1=001 acc 01-10-1999,002 cde 21-10-1980,003 efg 12-11-1980
+result=re.findall(r'\d{2}-\d{2}-\d{2}-\d{4}',str1)
+print(result)
 
